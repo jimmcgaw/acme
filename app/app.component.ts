@@ -4,7 +4,8 @@ import { ProductListComponent } from './products/product-list.component';
 @Component({
   selector: 'acme-app',
   template: `
-  <div><h1>{{ pageTitle }}</h1>
+  <div>
+    <h1>{{ pageTitle }}</h1>
     <acme-books></acme-books>
   </div>
   `,

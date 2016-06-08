@@ -28,7 +28,7 @@ System.register(['angular2/core', './products/product-list.component'], function
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'acme-app',
-                        template: "\n  <div><h1>{{ pageTitle }}</h1>\n    <acme-books></acme-books>\n  </div>\n  ",
+                        template: "\n  <div>\n    <h1>{{ pageTitle }}</h1>\n    <acme-books></acme-books>\n  </div>\n  ",
                         directives: [product_list_component_1.ProductListComponent]
                     }), 
                     __metadata('design:paramtypes', [])
