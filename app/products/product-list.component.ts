@@ -2,6 +2,7 @@ import { Component, OnInit } from 'angular2/core';
 import { IProduct } from './product';
 import { ProductFilterPipe } from './product-filter.pipe';
 import { StarRatingComponent } from '../shared/star.component';
+import { ProductService } from './product.service';
 
 @Component({
     selector: 'acme-books',
@@ -39,12 +40,16 @@ export class ProductListComponent implements OnInit {
         }
     ];
 
+    constructor(private _productService: ProductService){
+
+    }
+
     toggleImage(): void {
         this.showImage = !this.showImage;
     }
 
     ngOnInit(): void {
-
+        this.products = this._productService.getProducts();
     }
 
     onRatingClicked(message: string): void {
